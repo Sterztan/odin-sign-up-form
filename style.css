@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     display: flex;
     margin: 0;
@@ -24,9 +30,9 @@ html, body {
 .form {
     font-size: 16px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
+    gap: 20px;
 }
 
 .middle {
@@ -38,13 +44,15 @@ html, body {
 }
 
 input {
-    max-width: 200px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    flex: 1 1 calc(33.333%);
+    flex: 1 1 auto;
 }
 
 .account {
@@ -91,6 +99,7 @@ input {
     justify-content: center;
     width: 875px;
     height: 200px;
+    font-family: "Norse-Bold", sans-serif;
 }
 
 .caption {
@@ -102,4 +111,15 @@ input {
     justify-content: center;
     align-items: center;
     background-color: rgba(50, 50, 50, 0.5);
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:#596D48;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
 }
